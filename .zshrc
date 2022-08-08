@@ -11,9 +11,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
 alias cls="clear"
-# alias tree="exa --icons --tree -L 1 -I node_modules"
-# alias ls="exa --icons"
-alias dir="ls -lh"
-# alias grep="grep --color"
+alias tree="exa --icons --tree -L 1 -I node_modules"
+alias ls="exa --icons"
+alias dir="exa --icons -lh"
+alias grep="grep --color"
 alias cat="bat"
 alias diff="icdiff"

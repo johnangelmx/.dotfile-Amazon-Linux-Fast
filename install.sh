@@ -69,6 +69,13 @@ sudo chsh $USER -s /usr/bin/zsh
 sudo git clone https://github.com/dylanaraps/neofetch.git
 sudo cp neofetch/neofetch /usr/bin/neofetch
 sudo rm -rf neofetch
-
+sudo rm -fr get-pip.py
+# Install exa
+wget https://github.com/ogham/exa/releases/download/v0.10.1/exa-linux-x86_64-v0.10.1.zip
+unzip exa-linux-x86_64-v*.zip -d exa
+sudo mv exa/bin/exa /usr/local/bin/
+rm -fr exa-linux-x86_64-v*.zip
+rm -fr exa
+#Presentation
 neofetch
 exec zsh
